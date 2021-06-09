@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/69e971e04e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,9 +22,9 @@
             <div class="headerRight">
                 <div class="headerImg"><a href="#"><img src="Img/menu.svg" alt="menu"></a>
                 </div>
-                <div class="headerImg"><a href="#"><img src="Img/profile.svg" alt="profile"></a>
+                <div class="headerImg"><a href="registration.html"><img src="Img/profile.svg" alt="profile"></a>
                 </div>
-                <div class="headerImg"><a href="#"><img src="Img/basket.svg" alt="basket"></a>
+                <div class="headerImg"><a href="cart.html"><img src="Img/basket.svg" alt="basket"></a>
                 </div>
             </div>
         </div>
@@ -37,26 +40,71 @@
             </div>
         </section>
         <div class="filterMenuBox container">
-            <div class="filterMenu">
-                <h4 class="filterH4">FILTER</h4><img class="filterMenuImg" src="Img/checkMark.svg" alt="checkMark">
+            <div class="filterMenuLeft">
+                <details class="filter">
+                    <summary><span class="summary__filter">FILTER</span><svg class="filterMenuImg" width="25"
+                            height="15" viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" />
+                        </svg>
+                    </summary>
+                    <article class="hiddenFilter">
+                        <details class="hidden__details">
+                            <summary class="hidden__filter__summary">
+                                <span href="#" class="hiddenFilterHead">CATEGORY</span>
+                            </summary>
+                            <ul>
+                                <li class="hiddenFilterLi"><a class="hiddenFilterA" href="#">Accessories</a></li>
+                                <li class="hiddenFilterLi"><a class="hiddenFilterA" href="#">Bags</a></li>
+                                <li class="hiddenFilterLi"><a class="hiddenFilterA" href="#">Denim</a></li>
+                                <li class="hiddenFilterLi"><a class="hiddenFilterA" href="#">Hoodies & Sweatshirts</a>
+                                </li>
+                                <li class="hiddenFilterLi"><a class="hiddenFilterA" href="#">Jackets & Coats</a></li>
+                                <li class="hiddenFilterLi"><a class="hiddenFilterA" href="#">Polos</a></li>
+                                <li class="hiddenFilterLi"><a class="hiddenFilterA" href="#">Shirts</a></li>
+                                <li class="hiddenFilterLi"><a class="hiddenFilterA" href="#">Shoes</a></li>
+                                <li class="hiddenFilterLi"><a class="hiddenFilterA" href="#">Sweaters & Knits</a></li>
+                                <li class="hiddenFilterLi"><a class="hiddenFilterA" href="#">T-Shirts</a></li>
+                                <li class="hiddenFilterLi"><a class="hiddenFilterA" href="#">Tanks</a></li>
+                            </ul>
+                        </details>
+                        <details class="hidden__details">
+                            <summary class="hidden__filter__summary"><span href="#"
+                                    class="hiddenFilterHead">BRAND</span></summary>
+                        </details>
+                        <details class="hidden__details">
+                            <summary class="hidden__filter__summary"><span href="#"
+                                    class="hiddenFilterHead">DESINGER</span></summary>
+                        </details>
+                    </article>
+                </details>
             </div>
             <div class="filterMenuCenter">
                 <div class="filterMenu">
-                    <h4 class="filterMenuH4">TRENDING NOW</h4><img class="filterMenuImg" src="Img/filter.svg"
-                        alt="filter">
+                    <a href="#" class="filterMenuH4">
+                        <h4>TRENDING NOW</h4>
+                    </a>
+                    <a href="#"><img class="filterMenuImg" src="Img/filter.svg" alt="filter"></a>
+
                 </div>
                 <div class="filterMenu">
-                    <h4 class="filterMenuH4">SIZE</h4><img class="filterMenuImg" src="Img/filter.svg" alt="filter">
+                    <a href="#" class="filterMenuH4">
+                        <h4>SIZE</h4>
+                    </a>
+                    <a href="#"><img class="filterMenuImg" src="Img/filter.svg" alt="filter"></a>
                 </div>
                 <div class="filterMenu">
-                    <h4 class="filterMenuH4">PRICE</h4><img class="filterMenuImg" src="Img/filter.svg" alt="filter">
+                    <a href="#" class="filterMenuH4">
+                        <h4>PRICE</h4>
+                    </a>
+                    <a href="#"><img class="filterMenuImg" src="Img/filter.svg" alt="filter"></a>
                 </div>
             </div>
         </div>
         <section class="container">
             <div class="cards">
                 <article class="card"><img src="Img/img card 1.png" alt="card">
-                    <a href="#" class="h4Card">
+                    <a href="product.html" class="h4Card">
                         <h4 class="nameCard">ELLERY X M'O CAPSULE</h4>
                     </a>
                     <p class="description">Known for her sculptural takes on traditional tailoring, Australian
@@ -66,7 +114,7 @@
                     <p class="price">$52.00</p>
                 </article>
                 <article class="card"><img src="Img/ImageMan1.png" alt="card">
-                    <a href="#" class="h4Card">
+                    <a href="product.html" class="h4Card">
                         <h4 class="nameCard">ELLERY X M'O CAPSULE</h4>
                     </a>
                     <p class="description">Known for her sculptural takes on traditional tailoring, Australian
@@ -76,7 +124,7 @@
                     <p class="price">$52.00</p>
                 </article>
                 <article class="card"><img src="Img/img card 3.png" alt="card">
-                    <a href="#" class="h4Card">
+                    <a href="product.html" class="h4Card">
                         <h4 class="nameCard">ELLERY X M'O CAPSULE</h4>
                     </a>
                     <p class="description">Known for her sculptural takes on traditional tailoring, Australian
@@ -86,7 +134,7 @@
                     <p class="price">$52.00</p>
                 </article>
                 <article class="card"><img src="Img/img card 4.png" alt="card">
-                    <a href="#" class="h4Card">
+                    <a href="product.html" class="h4Card">
                         <h4 class="nameCard">ELLERY X M'O CAPSULE</h4>
                     </a>
                     <p class="description">Known for her sculptural takes on traditional tailoring, Australian
@@ -96,7 +144,7 @@
                     <p class="price">$52.00</p>
                 </article>
                 <article class="card"><img src="Img/ImageMan2.png" alt="card">
-                    <a href="#" class="h4Card">
+                    <a href="product.html" class="h4Card">
                         <h4 class="nameCard">ELLERY X M'O CAPSULE</h4>
                     </a>
                     <p class="description">Known for her sculptural takes on traditional tailoring, Australian
@@ -106,7 +154,7 @@
                     <p class="price">$52.00</p>
                 </article>
                 <article class="card"><img src="Img/ImageMan3.png" alt="card">
-                    <a href="#" class="h4Card">
+                    <a href="product.html" class="h4Card">
                         <h4 class="nameCard">ELLERY X M'O CAPSULE</h4>
                     </a>
                     <p class="description">Known for her sculptural takes on traditional tailoring, Australian
@@ -116,7 +164,7 @@
                     <p class="price">$52.00</p>
                 </article>
                 <article class="card"><img src="Img/ImageMan4.png" alt="card">
-                    <a href="#" class="h4Card">
+                    <a href="product.html" class="h4Card">
                         <h4 class="nameCard">ELLERY X M'O CAPSULE</h4>
                     </a>
                     <p class="description">Known for her sculptural takes on traditional tailoring, Australian
@@ -126,7 +174,7 @@
                     <p class="price">$52.00</p>
                 </article>
                 <article class="card"><img src="Img/ImageMan5.png" alt="card">
-                    <a href="#" class="h4Card">
+                    <a href="product.html" class="h4Card">
                         <h4 class="nameCard">ELLERY X M'O CAPSULE</h4>
                     </a>
                     <p class="description">Known for her sculptural takes on traditional tailoring, Australian
@@ -136,7 +184,7 @@
                     <p class="price">$52.00</p>
                 </article>
                 <article class="card"><img src="Img/ImageMan6.png" alt="card">
-                    <a href="#" class="h4Card">
+                    <a href="product.html" class="h4Card">
                         <h4 class="nameCard">ELLERY X M'O CAPSULE</h4>
                     </a>
                     <p class="description">Known for her sculptural takes on traditional tailoring, Australian
@@ -148,9 +196,17 @@
             </div>
         </section>
         <div class="next">
-            <div class="nextBox"><img class="nextArrow" src="Img/more.svg" alt="more">
-                <p class="nextP"><span class="dedicatedPage">1</span> 2 3 4 5 6.....20</p>
-                <img class="nextArrow" src="Img/less.svg" alt="less">
+            <div class="nextBox">
+                <a href="#"><img class="nextArrow" src="Img/more.svg" alt="more"></a>
+                <a href="#" class="nextP dedicatedPage">1</a>
+                <a href="#" class="nextP">2</a>
+                <a href="#" class="nextP">3</a>
+                <a href="#" class="nextP">4</a>
+                <a href="#" class="nextP">5</a>
+                <a href="#" class="nextP">6</a>
+                <span class="ellipsis">.....</span>
+                <a href="#" class="nextP">20</a>
+                <a href="#"><img class="nextArrow" src="Img/less.svg" alt="less"></a>
             </div>
         </div>
         <section class="services">
@@ -207,16 +263,13 @@
                 <span class="rights">© 2021 Brand All Rights Reserved.</span>
             </div>
             <div class="logoBox">
-                <article class="logo"><a class="sign" href="#"><img src="Img/facebook-f-brands (3) 1.svg"
-                            alt="facebook"></a>
+                <article class="logo"><a class="sign" href="#"><i class="fab fa-facebook-f"></i></i></a>
                 </article>
-                <article class="logo"><a class="sign" href="#"><img src="Img/instagram-brands 1.svg"
-                            alt="instagram"></a>
+                <article class="logo"><a class="sign" href="#"><i class="fab fa-instagram"></i></a>
                 </article>
-                <article class="logo"><a class="sign" href="#"><img src="Img/pinterest-p-brands 1.svg"
-                            alt="pinterest"></a>
+                <article class="logo"><a class="sign" href="#"><i class="fab fa-pinterest-p"></i></a>
                 </article>
-                <article class="logo"><a class="sign" href="#"><img src="Img/twitter-brands 1.svg" alt="twitter"></a>
+                <article class="logo"><a class="sign" href="#"><i class="fab fa-twitter"></i></a>
                 </article>
             </div>
         </div>
